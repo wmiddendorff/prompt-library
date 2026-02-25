@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Library: 60 Free ChatGPT, Claude & Agent Prompts</title>
+  <meta name="description" content="Browse 60 free AI prompts across coding, writing, business, analysis, marketing, productivity, DevOps, and agent workflows. Search, filter, favorite, and copy instantly." />
+  <meta name="keywords" content="AI prompts, ChatGPT prompts, Claude prompts, prompt library, coding prompts, writing prompts, agent prompts" />
+  <meta property="og:title" content="AI Prompt Library: 60 Free ChatGPT, Claude & Agent Prompts" />
+  <meta property="og:description" content="A searchable, filterable collection of 60 practical prompts for ChatGPT, Claude, and AI agents." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wmiddendorff.github.io/prompt-library/" />
+  <meta property="og:image" content="https://wmiddendorff.github.io/prompt-library/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Prompt Library: 60 Free ChatGPT, Claude & Agent Prompts" />
+  <meta name="twitter:description" content="Search, filter, favorite, and copy 60 high-utility AI prompts." />
+  <meta name="twitter:image" content="https://wmiddendorff.github.io/prompt-library/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #060913;
+      --bg-secondary: radial-gradient(circle at 15% 15%, rgba(106, 79, 255, 0.24), transparent 40%),
+                      radial-gradient(circle at 85% 0%, rgba(22, 152, 236, 0.2), transparent 35%),
+                      radial-gradient(circle at 50% 90%, rgba(184, 87, 255, 0.13), transparent 45%),
+                      #060913;
+      --card: rgba(14, 20, 41, 0.66);
+      --card-border: rgba(179, 144, 255, 0.22);
+      --text: #f2f4ff;
+      --text-muted: #b6bfde;
+      --primary: #9f7bff;
+      --primary-2: #65d6ff;
+      --success: #79ffbd;
+      --warning: #ffd580;
+      --shadow: 0 18px 50px rgba(3, 6, 18, 0.5);
+      --pill: rgba(126, 133, 255, 0.16);
+      --pill-active: linear-gradient(135deg, #8b6aff, #53c9ff);
+      --danger: #ff8fa3;
+      --light-bg: #eef1ff;
+      --light-card: rgba(255, 255, 255, 0.72);
+      --light-border: rgba(120, 104, 220, 0.24);
+      --light-text: #181d34;
+      --light-muted: #4a5478;
+    }
+
+    html[data-theme="light"] {
+      --bg: #eef1ff;
+      --bg-secondary: radial-gradient(circle at 20% 10%, rgba(130, 93, 255, 0.18), transparent 40%),
+                      radial-gradient(circle at 80% 0%, rgba(88, 185, 255, 0.22), transparent 35%),
+                      #eef1ff;
+      --card: var(--light-card);
+      --card-border: var(--light-border);
+      --text: var(--light-text);
+      --text-muted: var(--light-muted);
+      --pill: rgba(117, 106, 218, 0.16);
+      --shadow: 0 14px 32px rgba(49, 60, 104, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg-secondary);
+      color: var(--text);
+      font-family: Manrope, sans-serif;
+      min-height: 100vh;
+      line-height: 1.45;
+    }
+
+    .container {
+      width: min(1200px, 92vw);
+      margin: 0 auto;
+      padding: 20px 0 64px;
+    }
+
+    .top-banner,
+    .panel,
+    .prompt-card,
+    .cta-inline,
+    .footer {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .top-banner {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .top-banner strong {
+      font-family: "Space Grotesk", sans-serif;
+      letter-spacing: 0.02em;
+      font-size: 1rem;
+    }
+
+    .btn {
+      border: 0;
+      cursor: pointer;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font: 600 0.88rem/1.1 "Space Grotesk", sans-serif;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(130deg, #7a5cff, #35bfff);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    html[data-theme="light"] .btn-ghost {
+      background: rgba(20, 33, 75, 0.06);
+      border-color: rgba(20, 33, 75, 0.2);
+    }
+
+    .hero {
+      margin-bottom: 18px;
+      padding: 26px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font: 700 clamp(1.5rem, 4vw, 2.2rem)/1.05 "Space Grotesk", sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: var(--text-muted);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -50px;
+      top: -80px;
+      background: radial-gradient(circle, rgba(89, 195, 255, 0.42), transparent 65%);
+      pointer-events: none;
+    }
+
+    .stats {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: var(--pill);
+      color: var(--text);
+      font: 600 0.78rem/1 "Space Grotesk", sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    .panel {
+      padding: 16px;
+      margin-bottom: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: 1.2fr auto auto;
+      gap: 10px;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      font: 500 0.92rem/1.2 Manrope, sans-serif;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+      outline: none;
+    }
+
+    input[type="search"]:focus { border-color: rgba(100, 214, 255, 0.6); }
+
+    html[data-theme="light"] input[type="search"] { background: rgba(255, 255, 255, 0.7); }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--pill);
+      color: var(--text);
+      padding: 7px 11px;
+      font: 600 0.75rem/1 "Space Grotesk", sans-serif;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .chip.active {
+      background: var(--pill-active);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: #fff;
+    }
+
+    .results {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin: 2px 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .prompt-card {
+      padding: 14px;
+      position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .prompt-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(120, 216, 255, 0.45);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .title {
+      margin: 0;
+      font: 700 1rem/1.2 "Space Grotesk", sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    .meta {
+      margin: 8px 0 6px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 999px;
+      font: 600 0.67rem/1 "Space Grotesk", sans-serif;
+      letter-spacing: 0.02em;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .desc {
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      margin: 0 0 10px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .mini-btn {
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 7px 10px;
+      font: 600 0.72rem/1 "Space Grotesk", sans-serif;
+      cursor: pointer;
+    }
+
+    html[data-theme="light"] .mini-btn {
+      background: rgba(255, 255, 255, 0.62);
+      border-color: rgba(34, 42, 77, 0.24);
+    }
+
+    .favorite.active {
+      border-color: rgba(255, 213, 128, 0.55);
+      color: #ffd580;
+    }
+
+    .copy.success {
+      border-color: rgba(121, 255, 189, 0.55);
+      color: var(--success);
+    }
+
+    .content {
+      margin-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 10px;
+      display: none;
+      animation: fadeIn 0.26s ease;
+    }
+
+    .prompt-card.open .content { display: block; }
+
+    pre {
+      margin: 0;
+      font: 500 0.78rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      white-space: pre-wrap;
+      color: #d8e5ff;
+      background: rgba(5, 8, 20, 0.56);
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid rgba(173, 195, 255, 0.18);
+    }
+
+    html[data-theme="light"] pre {
+      color: #1d2753;
+      background: rgba(232, 238, 255, 0.8);
+      border-color: rgba(82, 99, 178, 0.22);
+    }
+
+    .pro-badge {
+      background: linear-gradient(135deg, #ffb86b, #ff7fc1);
+      color: #18061b;
+      font-weight: 700;
+    }
+
+    .locked {
+      border: 1px solid rgba(255, 196, 145, 0.3);
+      background: rgba(255, 188, 127, 0.08);
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 0.79rem;
+      color: #ffd7ae;
+      margin-top: 10px;
+    }
+
+    .locked a { color: #ffd580; }
+
+    .cta-inline {
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+      grid-column: 1 / -1;
+    }
+
+    .cta-inline h3 {
+      margin: 0 0 8px;
+      font: 700 1.1rem/1.1 "Space Grotesk", sans-serif;
+    }
+
+    .cta-inline p {
+      margin: 0 0 10px;
+      color: var(--text-muted);
+      max-width: 780px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .footer h3 { margin: 0 0 8px; font-family: "Space Grotesk", sans-serif; }
+
+    .newsletter {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      margin: 10px 0 14px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .product {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .product h4 { margin: 0 0 5px; font-family: "Space Grotesk", sans-serif; }
+    .product p { margin: 0 0 8px; color: var(--text-muted); font-size: 0.86rem; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-2px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 960px) {
+      .grid { grid-template-columns: 1fr; }
+      .search-row { grid-template-columns: 1fr; }
+      .newsletter { grid-template-columns: 1fr; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="top-banner" aria-label="Agent Playbook promotion">
+      <strong>Get the complete Agent Playbook for serious builders — $29</strong>
+      <a class="btn btn-primary" href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">Get Agent Playbook</a>
+    </section>
+
+    <section class="hero panel">
+      <h1>AI Prompt Library</h1>
+      <p>60 practical prompts for ChatGPT, Claude, and agent workflows. Search by keyword, filter by category and difficulty, favorite the best ones, and copy with one click.</p>
+      <div class="stats" aria-label="library stats">
+        <span class="stat" id="stat-total">60 prompts</span>
+        <span class="stat">10 categories</span>
+        <span class="stat">Beginner to Advanced</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="filters">
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Search title, description, or prompt text..." aria-label="Search prompts" />
+        <button id="toggle-favorites" class="btn btn-ghost" type="button">Favorites: Off</button>
+        <button id="theme-toggle" class="btn btn-ghost" type="button">Light Mode</button>
+      </div>
+      <div id="category-chips" class="chips" aria-label="Category filters"></div>
+      <div id="difficulty-chips" class="chips" aria-label="Difficulty filters"></div>
+      <p id="results" class="results">Showing 60 prompts.</p>
+    </section>
+
+    <section id="prompt-grid" class="grid" aria-live="polite"></section>
+
+    <footer class="footer" aria-label="footer upsells">
+      <h3>Stay in the loop</h3>
+      <p class="desc">Newsletter integration placeholder (Substack). Sign up to get new prompt drops and agent workflows.</p>
+      <div class="newsletter">
+        <input type="search" placeholder="Enter email for future newsletter integration" aria-label="Email address" />
+        <button class="btn btn-primary" type="button">Notify Me</button>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <h4>Agent Playbook — $29</h4>
+          <p>Full operating system for AI agent workflows, prompt architecture, and shipping routines.</p>
+          <a class="btn btn-primary" href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">View Product</a>
+        </article>
+        <article class="product">
+          <h4>Prompt Library PDF — $19</h4>
+          <p>Printable and searchable curated set of premium prompts with examples and variations.</p>
+          <a class="btn btn-primary" href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">Get PDF</a>
+        </article>
+      </div>
+    </footer>
+  </main>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is this AI prompt library?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A free collection of 60 prompts organized by category and difficulty, with search, favorites, and copy-to-clipboard support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which models do these prompts support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prompts are designed for ChatGPT, Claude, and general-purpose AI assistants with minimal adaptation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I save my favorite prompts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Favorites are saved in localStorage and persist in your browser."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    const prompts = [
+      {
+        id: 1,
+        title: "Senior Code Review with Risk Matrix",
+        category: "Coding",
+        difficulty: "advanced",
+        pro: false,
+        description: "Get a structured review covering correctness, security, performance, and maintainability.",
+        text: `You are a principal engineer reviewing this code:\n\n{{code_snippet}}\n\nContext:\n- Language: {{language}}\n- Runtime: {{runtime}}\n- Scale: {{traffic_or_data_volume}}\n\nReturn:\n1) High-risk issues first with severity and impact\n2) A risk matrix (likelihood x impact)\n3) Suggested code patches\n4) Missing tests\n5) Quick wins vs longer-term refactors`
+      },
+      {
+        id: 2,
+        title: "Root-Cause Debugging Tree",
+        category: "Coding",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Break bugs into hypotheses, diagnostics, and prioritized fixes.",
+        text: `Help me debug this issue:\n\nError: {{error_message}}\nRecent changes: {{recent_changes}}\nExpected behavior: {{expected_behavior}}\nObserved behavior: {{observed_behavior}}\n\nGenerate:\n- Top 5 likely root causes\n- Test/check for each cause\n- Fastest way to confirm or eliminate each\n- Minimal safe fix for most likely cause\n- Regression tests after fix`
+      },
+      {
+        id: 3,
+        title: "Refactor for Clarity and Stability",
+        category: "Coding",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Refactor messy code while preserving behavior and adding guardrails.",
+        text: `Refactor this code for readability and maintainability without changing behavior:\n{{code}}\n\nConstraints:\n- Preserve external APIs\n- Keep cyclomatic complexity low\n- Add comments only where logic is non-obvious\n\nProvide:\n1) Refactored code\n2) Explanation of each structural change\n3) Potential risks and how to test`
+      },
+      {
+        id: 4,
+        title: "Test Case Generator",
+        category: "Coding",
+        difficulty: "beginner",
+        pro: false,
+        description: "Generate unit and edge-case tests from code or requirements.",
+        text: `Write a complete test plan for:\n{{function_or_module}}\n\nInputs and constraints:\n{{constraints}}\n\nReturn:\n- Happy path tests\n- Boundary and edge cases\n- Failure mode tests\n- Property-based test ideas\n- Example test code in {{test_framework}}`
+      },
+      {
+        id: 5,
+        title: "Architecture Decision Record Draft",
+        category: "Coding",
+        difficulty: "advanced",
+        pro: true,
+        description: "Turn technical tradeoffs into a clean ADR format.",
+        text: `Create an ADR for this decision:\n{{decision}}\n\nContext:\n{{context}}\nAlternatives considered:\n{{alternatives}}\n\nOutput sections:\n- Status\n- Context\n- Decision\n- Consequences\n- Rollout plan\n- Revisit trigger`
+      },
+      {
+        id: 6,
+        title: "Technical Documentation Writer",
+        category: "Coding",
+        difficulty: "beginner",
+        pro: false,
+        description: "Produce clean docs for APIs, modules, or runbooks.",
+        text: `Write documentation for:\n{{component_name}}\n\nInclude:\n- Purpose and scope\n- Inputs/outputs\n- Setup and usage examples\n- Failure modes and troubleshooting\n- FAQ for new engineers\n\nTone: concise, practical, production-ready.`
+      },
+      {
+        id: 7,
+        title: "Blog Post Outline with Contrarian Angle",
+        category: "Writing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Get a structured long-form outline that avoids generic takes.",
+        text: `Create a detailed outline for a blog post on {{topic}} for {{audience}}.\n\nRequirements:\n- Strong hook\n- Contrarian or non-obvious thesis\n- 5-7 section outline\n- Supporting examples\n- Closing with action steps\n\nAdd 10 candidate headlines.`
+      },
+      {
+        id: 8,
+        title: "Cold Email Personalization Pack",
+        category: "Writing",
+        difficulty: "beginner",
+        pro: false,
+        description: "Generate concise cold email variants with personalization placeholders.",
+        text: `Write 5 cold email variants to pitch {{offer}} to {{persona}}.\n\nConstraints:\n- Under 120 words each\n- Personalization line with {{prospect_detail}}\n- One clear CTA\n- No hype\n\nReturn subject line + body for each.`
+      },
+      {
+        id: 9,
+        title: "Landing Page Copy System",
+        category: "Writing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Create headline, proof, objections, and conversion-focused copy blocks.",
+        text: `Write landing page copy for {{product}} targeting {{audience}}.\n\nInclude:\n- Hero headline + subheadline\n- 3 value props\n- Social proof section\n- Objection handling\n- CTA copy variants\n\nVoice: {{brand_voice}}.`
+      },
+      {
+        id: 10,
+        title: "Executive Summary Condenser",
+        category: "Writing",
+        difficulty: "beginner",
+        pro: false,
+        description: "Compress long text into concise executive summaries.",
+        text: `Summarize the following content into an executive brief:\n{{long_text}}\n\nOutput format:\n- Context\n- Key points (max 5)\n- Decisions required\n- Risks\n- Next actions`
+      },
+      {
+        id: 11,
+        title: "Tone Shift Rewriter",
+        category: "Writing",
+        difficulty: "beginner",
+        pro: true,
+        description: "Rewrite drafts across tones while keeping intent and facts.",
+        text: `Rewrite this message in three tones: {{tone_1}}, {{tone_2}}, {{tone_3}}\n\nOriginal:\n{{message}}\n\nConstraints:\n- Keep facts unchanged\n- Keep it under {{word_limit}} words\n- Preserve CTA`
+      },
+      {
+        id: 12,
+        title: "Meeting Notes to Action Plan",
+        category: "Writing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Convert messy notes into decisions, owners, and deadlines.",
+        text: `Turn these notes into an action plan:\n{{notes}}\n\nReturn:\n- Decisions made\n- Open questions\n- Action items with owner + due date\n- Risks and dependencies`
+      },
+      {
+        id: 13,
+        title: "Strategic Options Memo",
+        category: "Business",
+        difficulty: "advanced",
+        pro: false,
+        description: "Frame strategic choices with tradeoffs and recommendation.",
+        text: `I need a strategic memo for this objective: {{objective}}\n\nConstraints: {{constraints}}\nCurrent state: {{current_state}}\n\nBuild:\n- 3 strategic options\n- Pros/cons of each\n- Financial + operational implications\n- Recommendation with rationale\n- 90-day execution plan`
+      },
+      {
+        id: 14,
+        title: "Competitive Positioning Snapshot",
+        category: "Business",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Analyze competitors and identify differentiation angles.",
+        text: `Analyze this market:\n{{market}}\nOur product: {{our_product}}\nKey competitors: {{competitors}}\n\nReturn:\n- Competitor comparison table\n- Gaps we can exploit\n- Messaging angles\n- Risks to monitor\n- Strategic bets for next quarter`
+      },
+      {
+        id: 15,
+        title: "Pricing Strategy Model",
+        category: "Business",
+        difficulty: "advanced",
+        pro: true,
+        description: "Design tiered pricing with willingness-to-pay logic.",
+        text: `Design a pricing strategy for {{product}}.\n\nInputs:\n- COGS: {{cogs}}\n- Target margin: {{margin}}\n- Segments: {{segments}}\n- Current price: {{current_price}}\n\nOutput:\n- Proposed pricing tiers\n- Packaging by segment\n- Discount policy\n- Experiment roadmap`
+      },
+      {
+        id: 16,
+        title: "Pitch Deck Storyline Builder",
+        category: "Business",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Build narrative flow and slide-level talking points.",
+        text: `Create a 12-slide pitch narrative for {{company}} targeting {{investor_type}}.\n\nInclude slide-by-slide:\n- Core message\n- Supporting proof\n- Objection to preempt\n- Speaker note (1-2 lines)`
+      },
+      {
+        id: 17,
+        title: "Board Meeting Prep Assistant",
+        category: "Business",
+        difficulty: "advanced",
+        pro: false,
+        description: "Prepare board updates with metrics, risks, and asks.",
+        text: `Prepare me for a board meeting.\n\nCompany context: {{company_context}}\nTop metrics: {{metrics}}\nChallenges: {{challenges}}\n\nDeliver:\n- Executive narrative\n- What board will likely ask\n- Suggested responses\n- 3 concrete asks from the board`
+      },
+      {
+        id: 18,
+        title: "Weekly KPI Review Template",
+        category: "Business",
+        difficulty: "beginner",
+        pro: false,
+        description: "Standardize weekly KPI review and decision cadence.",
+        text: `Create a weekly KPI review template for {{team}}.\n\nMust include:\n- KPI dashboard section\n- Variance analysis\n- Root causes\n- Corrective actions\n- Owner + deadline fields`
+      },
+      {
+        id: 19,
+        title: "Research Synthesis Engine",
+        category: "Analysis",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Synthesize multiple sources into coherent insights.",
+        text: `Synthesize these sources into a concise analysis:\n{{source_notes}}\n\nReturn:\n- Core themes\n- Contradictions\n- Confidence level by finding\n- Practical implications\n- Unanswered questions`
+      },
+      {
+        id: 20,
+        title: "Trend Forecast Canvas",
+        category: "Analysis",
+        difficulty: "advanced",
+        pro: false,
+        description: "Forecast emerging trends with leading indicators.",
+        text: `Forecast trends for {{industry}} over {{time_horizon}}.\n\nProvide:\n- 5 likely trends\n- Leading indicators to track\n- Risks that could invalidate forecast\n- Strategic responses per trend`
+      },
+      {
+        id: 21,
+        title: "Survey Insight Analyzer",
+        category: "Analysis",
+        difficulty: "beginner",
+        pro: false,
+        description: "Extract themes and actionable recommendations from survey results.",
+        text: `Analyze this survey data summary:\n{{survey_summary}}\n\nOutput:\n- Top sentiment themes\n- Segment differences\n- 3 actionable improvements\n- Suggested follow-up questions`
+      },
+      {
+        id: 22,
+        title: "Root-Cause 5 Whys Facilitator",
+        category: "Analysis",
+        difficulty: "beginner",
+        pro: false,
+        description: "Run a disciplined 5 Whys session for incidents.",
+        text: `Facilitate a 5 Whys analysis for this issue:\n{{issue}}\n\nInclude:\n- 5 why chain\n- Evidence needed at each step\n- Most plausible root cause\n- Corrective and preventive actions`
+      },
+      {
+        id: 23,
+        title: "Experiment Debrief Template",
+        category: "Analysis",
+        difficulty: "intermediate",
+        pro: true,
+        description: "Debrief experiments with statistical and practical significance.",
+        text: `Debrief this experiment:\nHypothesis: {{hypothesis}}\nSetup: {{setup}}\nResults: {{results}}\n\nReturn:\n- Outcome vs hypothesis\n- Signal vs noise assessment\n- Lessons learned\n- Next experiment recommendation`
+      },
+      {
+        id: 24,
+        title: "Risk Register Generator",
+        category: "Analysis",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Create a sortable risk register with mitigation plans.",
+        text: `Build a risk register for {{project}}.\n\nFor each risk include:\n- Description\n- Likelihood (1-5)\n- Impact (1-5)\n- Owner\n- Mitigation\n- Trigger signal`
+      },
+      {
+        id: 25,
+        title: "Idea Storm with Constraints",
+        category: "Creative",
+        difficulty: "beginner",
+        pro: false,
+        description: "Generate creative ideas while honoring strict constraints.",
+        text: `Brainstorm 30 ideas for {{challenge}}.\n\nConstraints:\n{{constraints}}\n\nOrganize ideas into:\n- Low effort / high impact\n- Medium effort / medium impact\n- High effort / high upside`
+      },
+      {
+        id: 26,
+        title: "Story Arc Designer",
+        category: "Creative",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Build compelling story arcs with conflict and transformation.",
+        text: `Design a story arc for {{topic_or_brand}} with this audience: {{audience}}.\n\nInclude:\n- Character (or customer) baseline\n- Conflict and stakes\n- Turning point\n- Resolution\n- Memorable ending line`
+      },
+      {
+        id: 27,
+        title: "Brand Naming Sprint",
+        category: "Creative",
+        difficulty: "beginner",
+        pro: false,
+        description: "Produce name options with positioning rationale.",
+        text: `Generate 40 name options for {{company_or_product}}.\n\nTone: {{tone}}\nConstraints: {{constraints}}\n\nReturn:\n- Name\n- Why it fits\n- Potential downside\n- Domain style suggestion`
+      },
+      {
+        id: 28,
+        title: "Design Brief Constructor",
+        category: "Creative",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Transform loose requests into actionable design briefs.",
+        text: `Write a design brief for {{project}}.\n\nInclude:\n- Objective\n- Audience\n- Visual direction\n- Must-have elements\n- Constraints\n- Success criteria`
+      },
+      {
+        id: 29,
+        title: "Campaign Concept Generator",
+        category: "Creative",
+        difficulty: "advanced",
+        pro: true,
+        description: "Create integrated campaign concepts and execution hooks.",
+        text: `Generate 3 campaign concepts for {{brand}} around {{theme}}.\n\nFor each concept include:\n- Big idea\n- Tagline\n- Channel execution examples\n- KPI focus\n- Why it could fail`
+      },
+      {
+        id: 30,
+        title: "Narrative Hook Variations",
+        category: "Creative",
+        difficulty: "beginner",
+        pro: false,
+        description: "Create multiple opening hooks for posts, emails, or videos.",
+        text: `Write 20 opening hooks for content about {{topic}} targeting {{audience}}.\n\nStyle mix:\n- Curiosity gap\n- Data-driven\n- Contrarian\n- Personal story\n\nEach hook under 18 words.`
+      },
+      {
+        id: 31,
+        title: "Weekly Planning Copilot",
+        category: "Productivity",
+        difficulty: "beginner",
+        pro: false,
+        description: "Plan a realistic week with priorities and buffers.",
+        text: `Help me plan my week.\n\nGoals: {{goals}}\nMeetings: {{meetings}}\nConstraints: {{constraints}}\n\nReturn:\n- Top 3 priorities\n- Daily focus blocks\n- Buffer blocks\n- End-of-day review checklist`
+      },
+      {
+        id: 32,
+        title: "Decision Matrix Builder",
+        category: "Productivity",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Score decision options against weighted criteria.",
+        text: `Create a decision matrix for:\n{{decision}}\n\nOptions: {{options}}\nCriteria + weights: {{criteria}}\n\nOutput:\n- Scored table\n- Sensitivity notes\n- Recommendation\n- What data would change the outcome`
+      },
+      {
+        id: 33,
+        title: "SOP Draft Generator",
+        category: "Productivity",
+        difficulty: "beginner",
+        pro: false,
+        description: "Turn repeated tasks into reusable SOPs.",
+        text: `Draft an SOP for {{process_name}}.\n\nInclude:\n- Trigger\n- Step-by-step procedure\n- Required tools\n- Quality checklist\n- Escalation path`
+      },
+      {
+        id: 34,
+        title: "Priority Triage Assistant",
+        category: "Productivity",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Rank incoming tasks by urgency, impact, and effort.",
+        text: `Triage these tasks:\n{{task_list}}\n\nFramework:\n- Urgency\n- Impact\n- Effort\n- Strategic alignment\n\nReturn ranked list + what to defer/delegate/delete.`
+      },
+      {
+        id: 35,
+        title: "Personal Review Retrospective",
+        category: "Productivity",
+        difficulty: "advanced",
+        pro: true,
+        description: "Run a monthly retrospective with behavior and output metrics.",
+        text: `Run a monthly retrospective for me.\n\nData:\n{{journal_or_metrics}}\n\nOutput:\n- What worked\n- What did not\n- Habit-level bottlenecks\n- One experiment for next month\n- Commitment contract`
+      },
+      {
+        id: 36,
+        title: "Async Team Update Template",
+        category: "Productivity",
+        difficulty: "beginner",
+        pro: false,
+        description: "Create crisp async updates with decisions and blockers.",
+        text: `Turn this raw update into a clean async post:\n{{raw_update}}\n\nFormat:\n- Progress\n- Decisions\n- Blockers\n- Help needed\n- Next steps`
+      },
+      {
+        id: 37,
+        title: "Explain Like I'm Busy",
+        category: "Learning",
+        difficulty: "beginner",
+        pro: false,
+        description: "Explain complex concepts fast with layered depth.",
+        text: `Explain {{concept}} at three levels:\n1) 30-second explanation\n2) 2-minute explanation with analogy\n3) Deep explanation with technical details\n\nThen provide 3 comprehension questions.`
+      },
+      {
+        id: 38,
+        title: "Study Guide Composer",
+        category: "Learning",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Build a study plan with milestones and active recall.",
+        text: `Create a 4-week study guide for {{subject}}.\n\nAvailable time: {{hours_per_week}}\nGoal: {{goal}}\n\nInclude:\n- Weekly topics\n- Practice tasks\n- Active recall prompts\n- Self-test checkpoints`
+      },
+      {
+        id: 39,
+        title: "Interview Prep Simulator",
+        category: "Learning",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Simulate mock interviews with feedback loops.",
+        text: `Simulate an interview for {{role}} at {{company_type}}.\n\nInclude:\n- 10 likely questions\n- Strong answer framework for each\n- Common mistakes\n- Follow-up drill questions`
+      },
+      {
+        id: 40,
+        title: "Concept-to-Project Translator",
+        category: "Learning",
+        difficulty: "advanced",
+        pro: false,
+        description: "Convert theory into practical projects to build mastery.",
+        text: `Turn {{concept}} into 3 portfolio-worthy projects.\n\nFor each project include:\n- Problem statement\n- Required skills\n- Milestones\n- Stretch goals\n- How to present results`
+      },
+      {
+        id: 41,
+        title: "Knowledge Gap Detector",
+        category: "Learning",
+        difficulty: "advanced",
+        pro: true,
+        description: "Diagnose weak spots and produce targeted drills.",
+        text: `Based on this performance data, identify knowledge gaps:\n{{performance_data}}\n\nOutput:\n- Gap diagnosis\n- Root causes\n- Targeted drills\n- Retest plan`
+      },
+      {
+        id: 42,
+        title: "Teach-Back Prompt",
+        category: "Learning",
+        difficulty: "beginner",
+        pro: false,
+        description: "Force retention by teaching concepts back clearly.",
+        text: `Help me teach back {{topic}}.\n\nFlow:\n- Ask me to explain\n- Identify weak points in my explanation\n- Correct errors\n- Ask one harder follow-up question\n- End with a compact summary I can memorize`
+      },
+      {
+        id: 43,
+        title: "Social Content Calendar",
+        category: "Marketing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Generate a channel-specific monthly content plan.",
+        text: `Build a 30-day content calendar for {{brand}} on {{platform}}.\n\nInputs:\n- Goals: {{goals}}\n- Audience: {{audience}}\n- Content pillars: {{pillars}}\n\nReturn daily post ideas + CTA + KPI target.`
+      },
+      {
+        id: 44,
+        title: "SEO Article Brief Builder",
+        category: "Marketing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Create SEO article briefs with search intent and structure.",
+        text: `Create an SEO brief for keyword: {{keyword}}\n\nInclude:\n- Search intent\n- Angle\n- H2/H3 outline\n- Internal link suggestions\n- FAQ section\n- Metadata draft`
+      },
+      {
+        id: 45,
+        title: "Ad Creative Variant Generator",
+        category: "Marketing",
+        difficulty: "beginner",
+        pro: false,
+        description: "Generate ad variants for testing hooks and offers.",
+        text: `Write ad creative variants for {{offer}} targeting {{audience}}.\n\nNeed:\n- 10 hooks\n- 5 body variants\n- 5 CTA variants\n- One hypothesis per variant cluster`
+      },
+      {
+        id: 46,
+        title: "Offer Positioning Rewrite",
+        category: "Marketing",
+        difficulty: "advanced",
+        pro: false,
+        description: "Improve conversion by tightening offer framing.",
+        text: `Rewrite this offer positioning:\n{{current_positioning}}\n\nTarget customer: {{target_customer}}\nPrimary pain: {{pain}}\n\nOutput:\n- New positioning statement\n- Differentiators\n- Proof points needed\n- Message hierarchy`
+      },
+      {
+        id: 47,
+        title: "Launch Plan Blueprint",
+        category: "Marketing",
+        difficulty: "advanced",
+        pro: true,
+        description: "Design a cross-channel launch plan with timeline and metrics.",
+        text: `Create a product launch plan for {{product}}.\n\nTimeline: {{timeline}}\nChannels: {{channels}}\nBudget: {{budget}}\n\nOutput:\n- Pre-launch, launch, post-launch phases\n- Campaign assets list\n- KPI dashboard\n- Risk mitigation plan`
+      },
+      {
+        id: 48,
+        title: "Email Nurture Sequence",
+        category: "Marketing",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Build a trust-to-conversion nurture sequence.",
+        text: `Write a 7-email nurture sequence for {{audience}} promoting {{offer}}.\n\nEach email needs:\n- Subject line\n- Core angle\n- CTA\n- Objection handled`
+      },
+      {
+        id: 49,
+        title: "SQL Query Copilot",
+        category: "Data & DevOps",
+        difficulty: "beginner",
+        pro: false,
+        description: "Generate SQL queries and explain logic clearly.",
+        text: `Write SQL for this analysis request:\n{{request}}\n\nSchema:\n{{schema}}\n\nReturn:\n- Query\n- Explanation of joins/filters\n- Validation checks\n- Indexing suggestion`
+      },
+      {
+        id: 50,
+        title: "CI/CD Pipeline Auditor",
+        category: "Data & DevOps",
+        difficulty: "advanced",
+        pro: false,
+        description: "Audit CI/CD setup for reliability and speed.",
+        text: `Audit this CI/CD pipeline config:\n{{pipeline_config}}\n\nEvaluate:\n- Build/test bottlenecks\n- Failure handling\n- Deployment safety\n- Secrets management\n- Improvements with expected impact`
+      },
+      {
+        id: 51,
+        title: "Incident Response Commander",
+        category: "Data & DevOps",
+        difficulty: "advanced",
+        pro: false,
+        description: "Drive incident response with clear communication and priorities.",
+        text: `Run incident response for:\n{{incident_description}}\n\nOutput:\n- Initial triage\n- Communication template (internal + customer)\n- Containment actions\n- Recovery plan\n- Postmortem outline`
+      },
+      {
+        id: 52,
+        title: "Monitoring Alert Tuner",
+        category: "Data & DevOps",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Reduce alert fatigue while preserving critical signal.",
+        text: `Improve this alerting setup:\n{{current_alerts}}\n\nGoals:\n- Reduce false positives\n- Improve MTTD/MTTR\n\nReturn:\n- Alerts to keep/remove\n- Threshold adjustments\n- Escalation policy\n- Dashboard updates`
+      },
+      {
+        id: 53,
+        title: "Data Quality Checklist Builder",
+        category: "Data & DevOps",
+        difficulty: "intermediate",
+        pro: true,
+        description: "Define data quality checks and remediation actions.",
+        text: `Create a data quality checklist for {{dataset}}.\n\nInclude checks for:\n- Completeness\n- Consistency\n- Uniqueness\n- Freshness\n- Validity\n\nAdd remediation workflow for failures.`
+      },
+      {
+        id: 54,
+        title: "Infrastructure Cost Optimizer",
+        category: "Data & DevOps",
+        difficulty: "advanced",
+        pro: false,
+        description: "Identify cloud cost-saving opportunities without reducing reliability.",
+        text: `Analyze this cloud cost profile:\n{{cost_profile}}\n\nReturn:\n- Top 5 savings opportunities\n- Risk of each optimization\n- Rollout sequence\n- Monitoring needed after changes`
+      },
+      {
+        id: 55,
+        title: "System Prompt Architect",
+        category: "AI/Agent",
+        difficulty: "advanced",
+        pro: false,
+        description: "Design robust system prompts with constraints and guardrails.",
+        text: `Design a system prompt for an agent that does {{agent_job}}.\n\nInclude:\n- Role and boundaries\n- Inputs and outputs\n- Tool usage rules\n- Refusal policy\n- Self-check before final answer`
+      },
+      {
+        id: 56,
+        title: "Multi-Step Prompt Chain Planner",
+        category: "AI/Agent",
+        difficulty: "advanced",
+        pro: false,
+        description: "Break complex outcomes into reliable prompt chains.",
+        text: `Create a prompt chain for this outcome: {{outcome}}\n\nReturn:\n- Step-by-step chain with I/O per step\n- Validation criteria for each step\n- Retry/fallback handling\n- Final assembly prompt`
+      },
+      {
+        id: 57,
+        title: "Agent Evaluation Harness",
+        category: "AI/Agent",
+        difficulty: "advanced",
+        pro: true,
+        description: "Build eval scenarios and scoring rubric for agent quality.",
+        text: `Design an evaluation harness for agent task: {{task_type}}\n\nInclude:\n- Test scenario set\n- Failure taxonomies\n- Scoring rubric\n- Pass/fail thresholds\n- Regression protocol`
+      },
+      {
+        id: 58,
+        title: "Prompt Robustness Red Team",
+        category: "AI/Agent",
+        difficulty: "advanced",
+        pro: false,
+        description: "Stress-test prompts for jailbreaks and ambiguity failures.",
+        text: `Red-team this prompt:\n{{prompt}}\n\nGenerate:\n- 10 adversarial user inputs\n- Likely failure behaviors\n- Prompt hardening changes\n- Safety policy checks`
+      },
+      {
+        id: 59,
+        title: "Tool-Use Policy Draft",
+        category: "AI/Agent",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Define clear tool invocation rules for agents.",
+        text: `Draft a tool-use policy for an AI agent with tools: {{tool_list}}\n\nNeed:\n- Trigger conditions\n- Allowed/blocked actions\n- Validation before tool call\n- Error handling\n- Logging requirements`
+      },
+      {
+        id: 60,
+        title: "Agent Workflow Postmortem",
+        category: "AI/Agent",
+        difficulty: "intermediate",
+        pro: false,
+        description: "Review failed agent runs and propose targeted fixes.",
+        text: `Analyze this failed agent run:\n{{run_log}}\n\nOutput:\n- Where the workflow broke\n- Root causes by layer (prompt/tool/data)\n- Priority fixes\n- Validation plan before next deployment`
+      }
+    ];
+
+    const categoryOrder = [
+      "All", "Coding", "Writing", "Business", "Analysis", "Creative", "Productivity", "Learning", "Marketing", "Data & DevOps", "AI/Agent"
+    ];
+    const difficultyOrder = ["all", "beginner", "intermediate", "advanced"];
+
+    const elements = {
+      grid: document.getElementById("prompt-grid"),
+      search: document.getElementById("search"),
+      results: document.getElementById("results"),
+      categoryChips: document.getElementById("category-chips"),
+      difficultyChips: document.getElementById("difficulty-chips"),
+      favoritesToggle: document.getElementById("toggle-favorites"),
+      themeToggle: document.getElementById("theme-toggle"),
+      totalStat: document.getElementById("stat-total")
+    };
+
+    const state = {
+      query: "",
+      category: "All",
+      difficulty: "all",
+      favoritesOnly: false,
+      favorites: new Set(JSON.parse(localStorage.getItem("promptFavorites") || "[]")),
+      theme: localStorage.getItem("promptTheme") || "dark"
+    };
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      state.theme = theme;
+      elements.themeToggle.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+      localStorage.setItem("promptTheme", theme);
+    }
+
+    function saveFavorites() {
+      localStorage.setItem("promptFavorites", JSON.stringify(Array.from(state.favorites)));
+    }
+
+    function getFilteredPrompts() {
+      const q = state.query.trim().toLowerCase();
+      return prompts.filter((p) => {
+        const queryMatch = !q || [p.title, p.description, p.text].join(" ").toLowerCase().includes(q);
+        const categoryMatch = state.category === "All" || p.category === state.category;
+        const difficultyMatch = state.difficulty === "all" || p.difficulty === state.difficulty;
+        const favoriteMatch = !state.favoritesOnly || state.favorites.has(p.id);
+        return queryMatch && categoryMatch && difficultyMatch && favoriteMatch;
+      });
+    }
+
+    function renderChips() {
+      elements.categoryChips.innerHTML = "";
+      categoryOrder.forEach((category) => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = `chip ${state.category === category ? "active" : ""}`;
+        chip.textContent = category;
+        chip.addEventListener("click", () => {
+          state.category = category;
+          render();
+        });
+        elements.categoryChips.appendChild(chip);
+      });
+
+      elements.difficultyChips.innerHTML = "";
+      difficultyOrder.forEach((difficulty) => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = `chip ${state.difficulty === difficulty ? "active" : ""}`;
+        chip.textContent = difficulty[0].toUpperCase() + difficulty.slice(1);
+        chip.addEventListener("click", () => {
+          state.difficulty = difficulty;
+          render();
+        });
+        elements.difficultyChips.appendChild(chip);
+      });
+
+      elements.favoritesToggle.textContent = `Favorites: ${state.favoritesOnly ? "On" : "Off"}`;
+      elements.favoritesToggle.classList.toggle("active", state.favoritesOnly);
+    }
+
+    function lockPreview(text) {
+      const firstTwo = text.split("\n").slice(0, 2).join("\n");
+      return `${firstTwo}\n\nUnlock full prompt in the Agent Playbook ->`;
+    }
+
+    function createPromptCard(prompt) {
+      const card = document.createElement("article");
+      card.className = "prompt-card";
+      card.setAttribute("data-id", prompt.id);
+
+      const safeText = prompt.pro ? lockPreview(prompt.text) : prompt.text;
+      const copyTarget = prompt.pro ? "Unlock in Agent Playbook" : prompt.text;
+
+      card.innerHTML = `
+        <div class="row">
+          <h3 class="title">${prompt.title}</h3>
+        </div>
+        <div class="meta">
+          <span class="tag">${prompt.category}</span>
+          <span class="tag">${prompt.difficulty}</span>
+          ${prompt.pro ? '<span class="tag pro-badge">PRO</span>' : ""}
+        </div>
+        <p class="desc">${prompt.description}</p>
+        <div class="actions">
+          <button class="mini-btn toggle" type="button">Expand</button>
+          <button class="mini-btn copy" type="button">Copy</button>
+          <button class="mini-btn favorite ${state.favorites.has(prompt.id) ? "active" : ""}" type="button">★ Favorite</button>
+        </div>
+        <div class="content">
+          <pre>${safeText}</pre>
+          ${prompt.pro ? '<div class="locked">This is a Pro prompt preview. <a href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">Unlock full prompt in the Agent Playbook</a>.</div>' : ""}
+        </div>
+      `;
+
+      const toggle = card.querySelector(".toggle");
+      const copy = card.querySelector(".copy");
+      const favorite = card.querySelector(".favorite");
+
+      toggle.addEventListener("click", () => {
+        card.classList.toggle("open");
+        toggle.textContent = card.classList.contains("open") ? "Collapse" : "Expand";
+      });
+
+      copy.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(copyTarget);
+          copy.classList.add("success");
+          copy.textContent = "Copied";
+          console.log("copy_prompt", { id: prompt.id, title: prompt.title });
+          setTimeout(() => {
+            copy.classList.remove("success");
+            copy.textContent = "Copy";
+          }, 900);
+        } catch (error) {
+          copy.textContent = "Copy failed";
+          setTimeout(() => { copy.textContent = "Copy"; }, 900);
+        }
+      });
+
+      favorite.addEventListener("click", () => {
+        if (state.favorites.has(prompt.id)) {
+          state.favorites.delete(prompt.id);
+        } else {
+          state.favorites.add(prompt.id);
+        }
+        saveFavorites();
+        render();
+      });
+
+      return card;
+    }
+
+    function createInlineCta(index) {
+      const block = document.createElement("aside");
+      block.className = "cta-inline";
+      block.innerHTML = `
+        <h3>Want the premium prompt systems?</h3>
+        <p>Get the Agent Playbook ($29) and Prompt Library PDF ($19) with advanced templates, scoring rubrics, and full pro prompt packs.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">Get Agent Playbook</a>
+          <a class="btn btn-ghost" href="https://bridgetteclaw.gumroad.com/l/ifwhz" target="_blank" rel="noopener noreferrer">Get Prompt PDF</a>
+        </div>
+      `;
+      block.setAttribute("aria-label", `Upsell after prompt ${index}`);
+      return block;
+    }
+
+    function renderGrid(filtered) {
+      elements.grid.innerHTML = "";
+      filtered.forEach((prompt, index) => {
+        elements.grid.appendChild(createPromptCard(prompt));
+        if ((index + 1) % 10 === 0) {
+          elements.grid.appendChild(createInlineCta(index + 1));
+        }
+      });
+    }
+
+    function renderResults(filtered) {
+      const scope = state.favoritesOnly ? " favorites" : " prompts";
+      elements.results.textContent = `Showing ${filtered.length}${scope}.`;
+      elements.totalStat.textContent = `${prompts.length} prompts`;
+    }
+
+    function render() {
+      renderChips();
+      const filtered = getFilteredPrompts();
+      renderResults(filtered);
+      renderGrid(filtered);
+    }
+
+    elements.search.addEventListener("input", (event) => {
+      state.query = event.target.value;
+      render();
+    });
+
+    elements.favoritesToggle.addEventListener("click", () => {
+      state.favoritesOnly = !state.favoritesOnly;
+      render();
+    });
+
+    elements.themeToggle.addEventListener("click", () => {
+      setTheme(state.theme === "dark" ? "light" : "dark");
+    });
+
+    setTheme(state.theme);
+    render();
+  </script>
+</body>
+</html>
